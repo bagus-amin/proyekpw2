@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Kesehatan Gigi Ananda - Depok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/bg dokter2.jpg') center center/cover no-repeat;
+            background-size: 1600px;
+        }
+
+        header {
+            background: #5472aa; 
+            color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            background-image: url('images/bg dokter2.jp'); /* Tambahkan gambar latar belakang */
+            background-size: cover;
+        }
+
+        header h1 {
+            font-weight: bold;
+            font-family: 'Arial Rounded MT Bold', serif;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        nav a {
+            margin-left: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #header-right {
+            float: right;
+            margin-top: 5px;
+        }
+
+        #search,
+        #login {
+            margin-left: 10px;
+        }
+
+        #akses {
+            padding: 10px;
+            background-color: #27ae60;
+            /* Warna hijau */
+            border: 1px solid #bdc3c7;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+            /* Warna teks putih */
+        }
+
+        #akses-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #ecf0f1;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        #akses-dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #akses-dropdown a:hover {
+            background-color: #bdc3c7;
+        }
+
+        #layanan,
+        #jadwal,
+        #dokter {
+            padding: 60px;
+            background-color: rgba(255, 255, 255, 0.521);
+            border: 5px solid #ffffff;
+            margin-top: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #layanan,
+        #jadwal,
+        #dokter {
+            margin-top: 100px;
+        }
+
+        #layanan-table,
+        #jadwal-table,
+        #dokter-table {
+            width: 100%;
+            text-align: center;
+        }
+
+        #layanan-desc {
+            width: 60%;
+        }
+
+        #jadwal-praktik {
+            width: 35%;
+        }
+
+        #dokter {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .dokter-box {
+            width: 20%;
+            border: 2px solid #2a2a2b;
+            padding: 5px;
+            margin-bottom: 80px;
+            text-align: center;
+        }
+
+        .dokter-box img {
+            max-width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.767);
+            padding: 10px;
+            text-align: center;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            #dokter .dokter-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Klinik Kesehatan Ananda - Depok</h1>
+        <div id="header-right">
+            <input type="text" id="search" placeholder="Search">
+            <a href="login1.html" id="login" style="color: #ffffff;">Logout</a>
+            <div id="akses" onclick="toggleAksesDropdown()">Akses
+                <div id="akses-dropdown">
+                    <a href="slide3.html">Layanan</a>
+                    <a href="profile drg.html">Jadwal</a>
+                    <a href="data dokter.html">Dokter Kami</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href aria-disabled="tampilan1.html">Home</a>
+        <a href="slide3.html">Layanan</a>
+        <a href="tampilan5.html">Booking</a>
+        <a href="data dokter.html">Data dokter</a>
+        
+        <a href="profile drg.html">Tentang Kami</a>
+        <li class="breadcrumb-item"><a href="registrasi.html">Daftar</a></li>
+    </nav>
+
+    <section id="klinik-info">
+        <h2 style="text-align: center;">Klinik Kesehatan Gigi</h2>
+        <p style="text-align: center;">Sayangi Orang disekitar anda dengan terlebih dahulu merawat mulut anda</p>
+    </section>
+
+    <section id="layanan">
+        <table id="layanan-table">
+            <tr>
+                <td id="layanan-desc">
+                    <h2>Nikmati Layanan kami</h2>
+                    <h3>Perawatan gigi, Pemasangan kawat gigi, pencabutan gigi, Penambalan, hingga Pemasangan Gigi Palsu</h3>
+                </td>
+                <td id="jadwal-praktik">
+                    <h2>Jadwal Praktik</h2>
+                    <p>Jadwal praktik dokter gigi:</p>
+                    <ul>
+                        <li>Dokter 1: Senin - Jumat, 09.00 - 17.00</li>
+                        <li>Dokter 2: Selasa - Sabtu, 10.00 - 18.00</li>
+                        <li>Dokter 3: Senin - Jumat, 09.00 - 17.00</li>
+                        <li>Dokter 4: Selasa - Sabtu, 10.00 - 18.00</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="dokter">
+        <h2><span>Dokter</span> Gigi</h2>
+        <div class="dokter-box">
+            <img src="bagus.jpg" alt="Dokter 1">
+            <p>drg. Bagus Amin</p>
+        </div>
+        <div class="dokter-box">
+            <img src="images/drg reza.jpg" alt="Dokter 2">
+            <p>drg. Muhammad Reza Alfiyana</p>
+        </div>
+        <div class="dokter-box">
+            <img src="Aul copy.jpg" alt="Dokter 3">
+            <p>drg. Auli Maharani</p>
+        </div>
+        <div class="dokter-box">
+            <img src="NISA.jpg" alt="Dokter 4">
+            <p>drg. Anisa</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Klinik Gigi. STT NF</p>
+    </footer>
+
+    <script>
+        function toggleAksesDropdown() {
+            var dropdown = document.getElementById("akses-dropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>

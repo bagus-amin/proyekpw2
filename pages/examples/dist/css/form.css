@@ -1,0 +1,36 @@
+/* Booking Page */
+.body{
+    color: #ADD8E6;
+}
+.border{
+    border: 10px solid black; 
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* End Booking Page */
+.content-header{
+    background-color: #ADD8E6;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+.search-box{
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    display: inline-block;
+}
+.search-input{
+    width: 150px;
+}
+.login-link{
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    color: white;
+    text-decoration: none;
+}
+.breadcrumb{
+    background-color: #ADD8E6;
+}

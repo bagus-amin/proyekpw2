@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Klinik Gigi - Ananda Depok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('images/bg dokter.jpg') center center/cover no-repeat; 
+            background-size: cover;
+        }
+
+        header {
+            background-color: #595f59;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .search-box {
+            position: absolute;
+            top: 60px;
+            right: 100px;
+            display: inline-block;
+        }
+
+        .search-input {
+            padding: 5px;
+            width: 150px;
+        }
+
+        .login-link {
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .box {
+            border: 1px solid #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .add-button {
+            background-color: #00ba828a;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .add-button:hover {
+            background-color: #007d6c;
+        }
+
+        .links {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .links a {
+            color: #008CBA;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #49c1e6;
+        }
+
+        td {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Admin Klinik Gigi - Ananda Depok</h1>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search">
+        </div>
+        <a href="login1.html" class="login-link">Login</a>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <div class="links">
+                <a href="tampilan1.html">Home</a> > <a href="#">Admin</a> > Booking
+            </div>
+            <h2>Daftar Booking</h2> 
+            <a href="formregist.html" class="add-button">Booking</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Tanggal</th>
+                        <th>Nama Pasien</th>
+                        <th>Nomor HP</th>
+                        <th>Dokter</th>
+                        <th>Layanan</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Isi tabel disini -->
+                    <tr>
+                        <td>1</td>
+                        <td>2024-01-13</td>
+                        <td>jaelani</td>
+                        <td>081234567890</td>
+                        <td>drg.Reza</td>
+                        <td>Pemeriksaan Gigi</td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                    <tr>
+                        <td>2</td>
+                        <td>2024-01-14</td>
+                        <td>hidayat</td>
+                        <td>082345678901</td>
+                        <td>drg.Reza</td>
+                        <td>Pencabutan Gigi</td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2024-01-15</td>
+                        <td>samsul</td>
+                        <td>083456789012</td>
+                        <td>drg.Reza</td>
+                        <td>Pemutihan Gigi</td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2024-01-16</td>
+                        <td>puad</td>
+                        <td>084567890123</td>
+                        <td>drg.Reza</td>
+                        <td>Pemeriksaan Gigi</td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2024-01-17</td>
+                        <td>Mahmud</td>
+                        <td>085678901234</td>
+                        <td>drg.Reza</td>
+                        <td>Pembersihan Karang Gigi</td>
+                        <td><button>Edit</button><button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

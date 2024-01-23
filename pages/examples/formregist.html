@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Registrasi</title>
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar navbar-white navbar-light">
+    </nav>
+    <!-- /.navbar -->
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1 style="text-align: center;">Klinik Kesehatan Gigi Ananda - Depok</h1><br>
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search">
+        </div>
+        <a href="login1.html" class="login-link">Logout</a>    
+        <div class="container-fluid" style="top: 120px;">
+          <div class="row mb-1">
+            <div class="col-sm-5">
+              <ol class="breadcrumb float-left">
+                <li class="breadcrumb-item"><a href="tampilan1.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="slide3.html">Layanan</a></li>
+                <li class="breadcrumb-item"><a href="tampilan5.html">Booking</a></li>
+                <li class="breadcrumb-item"><a href="data dokter.html">Data Dokter</a></li>
+                
+                <li class="breadcrumb-item"><a href="profile drg.html">Tentang Kami</a></li>
+                <li class="breadcrumb-item"><a href="registrasi.html">Daftar</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+      </section> <br>
+      <section class="content">
+        <!-- Default box -->
+      <div class="col-md-12">
+        <div class="card card-solid">
+          <div class="card-body">
+            <ol class="breadcrumb float-right" style="background-color: white;">
+              <li class="breadcrumb-item"><a href="tampilan1.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="slide3.html">Layanan</a></li>
+            </ol> <br>        
+  <form class="col-md-12" style="padding: 30px">
+    <fieldset class="border">
+      <legend>Booking Periksa Kesehatan Gigi</legend>
+      <div class="form-group row">
+        <label for="nama" class="col-4 col-form-label">Nama Pasien :</label>
+        <div class="col-8">
+          <input
+            id="nama"
+            name="nama"
+            placeholder="Masukan Nama Lengkap"
+            type="text"
+            required="required"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="dokter" class="col-4 col-form-label">Pilih Dokter :</label>
+        <div class="col-8">
+          <select
+            id="dokter"
+            name="dokter"
+            required="required"
+            class="custom-select"
+          >
+            <option value="bam">Drg. Bagus Amin</option>
+            <option value="eja">Drg. Muhammad Reza Alfiyana</option>
+            <option value="aul">Drg. Aulia Maharani</option>
+            <option value="nisa">Drg. Annisa Safitri</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="layanan" class="col-4 col-form-label">Pilih Layanan :</label>
+        <div class="col-8">
+          <select
+            id="layanan"
+            name="layanan"
+            required="required"
+            class="custom-select"
+          >
+            <option value="perawatan">Perawatan Gigi</option>
+            <option value="tambal">Tambal Gigi</option>
+            <option value="cabut">Pencabutan Gigi</option>
+            <option value="palsu">Pemasangan Gigi Palsu</option>
+            <option value="kawat">Pemasangan Kawat Gigi</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="keluhan" class="col-4 col-form-label">Keluhan :</label>
+        <div class="col-8">
+          <textarea
+            id="keluhan"
+            name="keluhan"
+            cols="40"
+            rows="3"
+            class="form-control"
+          ></textarea>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-4">Pembayaran :</label>
+        <div class="col-8">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input
+              name="bayar"
+              id="bayar_0"
+              type="radio"
+              required="required"
+              class="custom-control-input"
+              value="tunai"
+            />
+            <label for="bayar_0" class="custom-control-label">Tunai</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input
+              name="bayar"
+              id="bayar_1"
+              type="radio"
+              required="required"
+              class="custom-control-input"
+              value="tf"
+            />
+            <label for="bayar_1" class="custom-control-label">Transfer</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input
+              name="bayar"
+              id="bayar_2"
+              type="radio"
+              required="required"
+              class="custom-control-input"
+              value="ewalet"
+            />
+            <label for="bayar_2" class="custom-control-label">e-Walet</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="tanggal" class="col-4 col-form-label"
+          >Tanggal Periksa :</label
+        >
+        <div class="col-8">
+          <div class="input-group">
+            <input
+              id="tanggal"
+              name="tanggal"
+              type="date"
+              required="required"
+              class="form-control"
+            />
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <i class="fa fa-calendar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="usia" class="col-4 col-form-label">Usia:</label>
+        <div class="col-8">
+          <input
+            id="usia"
+            name="usia"
+            type="number"
+            required="required"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="telp" class="col-4 col-form-label">No. Telp / HP</label>
+        <div class="col-8">
+          <input
+            id="telp"
+            name="telp"
+            type="number"
+            required="required"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email" class="col-4 col-form-label">Email :</label>
+        <div class="col-8">
+          <input
+            id="email"
+            name="email"
+            type="text"
+            required="required"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="submit" type="submit" class="btn btn-primary">
+            Submit
+          </button>
+          <button name="reset" type="reset" class="btn btn-primary">Reset</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>  
+</body>
+<footer class="main-footer">
+  <div class="float-right d-none d-sm-block">
+  </div>
+  <strong>Develop By Kelompok 7 SI05</a>
+</footer>
+</html>
